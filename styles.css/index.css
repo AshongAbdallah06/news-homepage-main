@@ -4,8 +4,7 @@
 }
 
 body {
-    /* font-family: ; */
-
+    font-family: "Inter", sans-serif;
 }
 
 header {
@@ -18,6 +17,17 @@ header .right {
     display: flex;
 }
 
+header .right p {
+    font-size: 13px;
+    color: hsl(236, 13%, 42%);
+    cursor: pointer;
+    transition: color 0.15s;
+}
+
+header .right p:hover {
+    color: hsl(5, 85%, 63%);
+}
+
 .middle {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -25,9 +35,11 @@ header .right {
 
 .middle .left {
     /* background-color: black; */
-    height: 100vh;
+    height: 86.6vh;
     display: flex;
     flex-direction: column;
+    margin-top: -10px;
+
 }
 
 .web3-img {
@@ -36,15 +48,76 @@ header .right {
 
 .web3-text-cont {
     display: flex;
+    justify-content: space-between;
+}
 
+.web3-text-cont h1 {
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+.web3-text-cont p {
+    color: hsl(236, 13%, 42%);
+    font-size: 14px;
+    width: 320px;
+    line-height: 22px;
+}
+
+.read-more-btn {
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(5, 85%, 63%);
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.read-more-btn:hover {
+    background-color: hsl(240, 100%, 5%);
 }
 
 .middle .right {
-    /* background-color: red; */
-    height: 100vh;
+    background-color: hsl(240, 100%, 5%);
+    vertical-align: top;
+    height: 86.6vh;
     display: flex;
     flex-direction: column;
 }
+
+.new-label {
+    color: hsl(35, 77%, 62%);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.middle .cont .heading {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.15s;
+}
+
+.middle .cont .heading:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.cont .insights {
+    color: hsl(236, 13%, 42%);
+    width: 320px;
+    /* font-size: 13px; */
+}
+
+.cont .insights::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 40px;
+    background-color: hsl(236, 13%, 42%);
+}
+
 
 
 .bottom {
@@ -57,4 +130,37 @@ header .right {
 
 .bottom-image {
     height: 120px;
+    cursor: pointer;
+}
+
+/* .bottom .right {
+    background-color: lightblue;
+} */
+
+.bottom .right .number {
+    color: hsl(233, 8%, 79%);
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bottom .right .heading {
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.15s;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.bottom .right .heading:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.bottom .right .text {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    width: 200px;
+    color: hsl(233, 8%, 79%);
 }
