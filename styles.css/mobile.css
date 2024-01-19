@@ -1,4 +1,7 @@
 @media (max-width: 600px) {
+    * {
+        margin: 2px;
+    }
 
     body {
         display: flex;
@@ -52,10 +55,6 @@
         }
     }
 
-    .close-icon {
-        height: 20px;
-    }
-
     .mobile-menu-cont .menus {
         margin-top: 200px;
         margin-left: 30px;
@@ -74,9 +73,10 @@
 
     .close-icon {
         position: absolute;
-        right: 10px;
+        right: 30px;
         cursor: pointer;
-        top: 20px;
+        top: 40px;
+        height: 20px;
     }
 
     .menu {
