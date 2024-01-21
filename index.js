@@ -12,6 +12,23 @@ function checkWidth() {
             `
             <img class="web3-img" src="assets/images/image-web-3-mobile.jpg" alt="">
             `
+
+            let menuBtn = document.querySelector('.menu-button');
+            menuBtn.addEventListener('click', () => {
+                    document.querySelector('.mmc').classList.add('show-mmc');
+                    document.querySelector('.mobile-menu-cont').classList.add('mobile-menu-cont-animation')
+                    document.querySelector('.mobile-menu-cont').classList.remove('mobile-menu-cont-remove-animation')
+                    
+            })
+            
+            
+            let closeButton = document.querySelector('.close-icon');
+            closeButton.addEventListener('click', () => {
+                document.querySelector('.mmc').classList.remove('show-mmc');
+                document.querySelector('.mobile-menu-cont').classList.remove('mobile-menu-cont-animation')
+            
+                document.querySelector('.mobile-menu-cont').classList.add('mobile-menu-cont-remove-animation')
+            })
     } else {
         menubar.innerHTML = 
             `
@@ -25,17 +42,7 @@ function checkWidth() {
 }
 checkWidth(); // Initial Load
 
-let menuBtn = document.querySelector('.menu-button');
-menuBtn.addEventListener('click', () => {
-        document.querySelector('.mmc').classList.add('show-mmc');
-        document.querySelector('.mobile-menu-cont').classList.add('mobile-menu-cont-animation')
-})
 
-
-let closeButton = document.querySelector('.close-icon');
-closeButton.addEventListener('click', () => {
-    document.querySelector('.mmc').classList.remove('show-mmc');
-    document.querySelector('.mobile-menu-cont').classList.remove('mobile-menu-cont-animation')})
 
 
 window.addEventListener('resize', () => {

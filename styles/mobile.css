@@ -1,0 +1,33 @@
+@media (max-width: 600px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        /* background-color: red; */
+    }
+
+    .middle {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .web3-text-cont {
+        flex-direction: column;
+    }
+
+    .middle .right {
+        width: 95%;
+        /* height: 65vh; */
+        /* margin-top: 100px; */
+
+    }
+
+    .bottom {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+
+}
