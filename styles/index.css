@@ -35,14 +35,14 @@ header .right p:hover {
 
 .middle .left {
     /* background-color: black; */
-    height: 86.6vh;
+    /* height: 860px; */
     display: flex;
     flex-direction: column;
     margin-top: -10px;
-
 }
 
 .web3-img {
+    height: 350px;
     width: 100%;
 }
 
@@ -80,7 +80,8 @@ header .right p:hover {
 .middle .right {
     background-color: hsl(240, 100%, 5%);
     vertical-align: top;
-    height: 86.6vh;
+    width: 400px;
+    /* height: 86.6vh; */
     display: flex;
     flex-direction: column;
 }
